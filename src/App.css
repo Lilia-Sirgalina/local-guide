@@ -1,1 +1,52 @@
+body {
+    background-color: #F8F8F8;
+}
 
+.header {
+    display: flex;
+    justify-content: center;
+    font-size: 21px;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #212020;
+}
+
+nav {
+    background-color: #EA0558;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.link {
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.langBtn {
+    background-color: #EA0558;
+    border: none;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.langContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdownLang {
+    position: absolute;
+    top: 100%;
+    background-color: #EA0558;
+    padding: 5px;
+}

@@ -1,7 +1,11 @@
+import imgOne from './costa-maresme.webp'
+
 const Home = () => {
     return (
         <div>
-            <h1>Home component</h1>
+            
+
+            <img src={imgOne} alt="Costa maresme" width="100%" />
         </div>
     )
 }
