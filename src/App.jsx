@@ -6,7 +6,7 @@ import Beaches from './Beaches';
 import Restaurants from './Restaurants';
 import Barcelona from './Barcelona';
 import ActiveAndNature from './ActiveAndNature';
-import spainFlag from './icons8-spain-flag-48.png'
+import Shopping from './Shopping';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   
 
   return (
-    <> 
+    <div className='App'> 
       <div className='header'>
         <h1>LOCAL GUIDE</h1>
       </div>
@@ -28,6 +28,7 @@ function App() {
           <Link to="/restaurants" className="link">Restaurants</Link>
           <Link to="/Barcelona" className="link">Barcelona/Girona</Link>
           <Link to="/active" className="link">Active&Nature</Link>
+          <Link to="/shopping" className="link">Shopping</Link>
 
           <div className='langContainer' onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
               <button className='langBtn'>ES ▾</button>
@@ -46,10 +47,11 @@ function App() {
           <Route path="/restaurants" element={<Restaurants />} />
           <Route path="/Barcelona" element={<Barcelona />} />
           <Route path="/active" element={<ActiveAndNature />} />
+          <Route path="/shopping" element={<Shopping />} />
         </Routes>
       </Router>    
      
-    </>
+    </div>
   )
 }
 

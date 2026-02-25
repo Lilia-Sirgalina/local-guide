@@ -11,6 +11,7 @@ body {
 h1 {
     font-family: "Montserrat", sans-serif;
     color: #212020;
+    margin-top: 0;
 }
 
 nav {
@@ -50,3 +51,98 @@ nav {
     background-color: #EA0558;
     padding: 5px;
 }
+
+.Home {
+    background-image: url(costa-maresme.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;    
+    min-height: 100vh;    
+    background-attachment: fixed;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #212020;
+    background-color: rgba(239, 243, 245, 0.9); 
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.supermarkets {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;     
+}
+
+.storeCard { 
+    margin-top: 20px;
+    width: 300px;
+    height: 470px;    
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;   
+    background-color: rgba(239, 243, 245, 0.9);   
+    box-shadow: 
+        0 8px 15px rgba(0, 0, 0, 0.1),
+        0 20px 40px rgba(0, 0, 0, 0.12);    
+}
+
+h3 {
+    color: #EA0558;
+}
+
+.linkToGoogle {    
+    padding: 10px 15px;
+    background: linear-gradient(
+        135deg,
+        rgb(18, 90, 110),
+        rgb(35, 140, 165),
+        rgb(18, 90, 110)
+    );
+    background-size: 200% 200%;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;   
+    font-weight: 500;
+    font-size: 15px;
+    transition: background-position 0.6s ease, transform 0.2s ease;
+}
+
+.linkToGoogle:hover {
+    background-position: right center;
+    transform: translateY(-1px);
+}
+
+.googleLink {
+    color: white;
+    font-size: 15px;
+}
+
+.trashInfo {
+    margin: auto;
+    padding: 50px;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 30px;
+    background-color: rgba(239, 243, 245, 0.9);   
+    box-shadow: 
+        0 8px 15px rgba(0, 0, 0, 0.1),
+        0 20px 40px rgba(0, 0, 0, 0.12); 
+    font-family: "Montserrat", sans-serif; 
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
