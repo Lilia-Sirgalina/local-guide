@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import './App.css'
+import { useTranslation } from 'react-i18next';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router";
+import './App.css'
 import Home from './Home';
 import Beaches from './Beaches';
 import Restaurants from './Restaurants';
@@ -11,33 +12,28 @@ import Shopping from './Shopping';
 
 function App() {
 
-  const [open, setOpen] = useState(false);
-
-  
+  const {i18n, t} = useTranslation();
+  const [open, setOpen] = useState(false);  
 
   return (
     <div className='App'> 
       <div className='header'>
-        <h1>LOCAL GUIDE</h1>
+        <h1>{t("local guide")}</h1>
       </div>
 
       <Router>
         <nav>
-          <Link to="/" className="link">Home</Link>
-          <Link to="/beaches" className="link">Beaches</Link>
-          <Link to="/restaurants" className="link">Restaurants</Link>
-          <Link to="/Barcelona" className="link">Barcelona/Girona</Link>
-          <Link to="/active" className="link">Active&Nature</Link>
-          <Link to="/shopping" className="link">Shopping</Link>
+          <Link to="/" className="link">{t("home")}</Link>
+          <Link to="/beaches" className="link">{t("beaches")}</Link>
+          <Link to="/restaurants" className="link">{t("restaurants")}</Link>
+          <Link to="/Barcelona" className="link">{t("bcn")}</Link>
+          <Link to="/active" className="link">{t("active-nature")}</Link>
+          <Link to="/shopping" className="link">{t("shopping")}</Link>
 
-          <div className='langContainer' onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
-              <button className='langBtn'>ES ▾</button>
-                {open && (
-                  <div className='dropdownLang'>
-                    <button className='langBtn'>EN</button>
-                    <button className='langBtn'>FR</button>
-                  </div>
-                )}
+          <div className='langContainer'>
+              <button className='langBtn' onClick={() => i18n.changeLanguage('en')}>EN /</button>
+              <button className='langBtn' onClick={() => i18n.changeLanguage('fr')}>FR /</button>
+              <button className='langBtn' onClick={() => i18n.changeLanguage('es')}>ES</button>                
           </div>
 
         </nav>
