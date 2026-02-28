@@ -1,7 +1,13 @@
 const Beaches = () => {
+
+    
     return (
-        <div>
-            <h1>Beaches component</h1>
+        <div className="Beaches">
+            <div className='header'>
+                <h2>Playas</h2>
+            </div>
+
+            
         </div>
     )
 }

@@ -53,7 +53,7 @@ nav {
 }
 
 .Home {
-    background-image: url(costa-maresme.webp);
+    background-image: url(./assets/view.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,5 +144,15 @@ h3, h4 {
     border: none;
     padding: 0;
     cursor: pointer;
+}
+
+.Beaches {
+    background-image: url(./assets/costa-maresme.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;    
+    min-height: 100vh;    
+    background-attachment: fixed;
 }
 
