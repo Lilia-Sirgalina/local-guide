@@ -21,5 +21,16 @@
     "containers 2km": "Conteneurs à 2 km (5 min en voiture):",
     "containers 3km": "Conteneurs à 3 km (7 min en voiture):",
     "containers 4km": "Conteneurs à 4,2 km (9 min en voiture):",
-    "directions": "Itinéraire"
+    "directions": "Itinéraire",
+    "recommended": "Recommandés",
+    "all beaches": "Toutes les plages",
+    "sand": "Sable",
+    "rocky": "Rocheux",
+    "kidsFriendly": "Adapté aux enfants",
+    "snorkeling": "Buceo",
+    "restaurant": "Restaurant",
+    "15 min": "15–20 min en voiture",
+    "20 min": "20-25 min en voiture",
+    "25 min": "Plus de 25 min en voiture",
+    "show all": "Tout afficher"
 }

@@ -21,5 +21,16 @@
     "containers 2km": "Contenedores a 2 km (5 min en coche):",
     "containers 3km": "Contenedores a 3 km (7 min en coche):",
     "containers 4km": "Contenedores a 4,2 km (9 min en coche):",
-    "directions": "Cómo llegar"
+    "directions": "Cómo llegar",
+    "recommended": "Recomendado",
+    "all beaches": "Todas las playas",
+    "sand": "Arena",
+    "rocky": "Rocoso",
+    "kidsFriendly": "Apto para niños",
+    "snorkeling": "Buceo",
+    "restaurant": "Restaurante",
+    "15 min": "15-20 min en coche",
+    "20 min": "20-25 min en coche",
+    "25 min": "Más de 25 min en coche",
+    "show all": "Mostrar todo"
 }

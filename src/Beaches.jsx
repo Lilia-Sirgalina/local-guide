@@ -1,12 +1,95 @@
+import { useState } from "react";
+import { beaches } from "./data/beaches";
+import { useTranslation } from "react-i18next";
+import prevBtn from './icons8-back-64.png'
+import nextBtn from './icons8-forward-64.png'
+
 const Beaches = () => {
+
+    const {i18n, t} = useTranslation();
+    const lang = i18n.language;
+
+    const [playas, setPlayas] = useState(beaches);
+    const top3Beaches = beaches.slice(0, 3);
+    const [topBeaches, setTopBeaches] = useState(0);
+    const {id, name, image, description, gps} = top3Beaches[topBeaches];
+    
+    const filteredBeaches = (key, value) => {
+        const filtered = beaches.filter((beach) => beach[key] === value);
+        setPlayas(filtered);
+    };
+
+    const previous = () => {
+        setTopBeaches(beaches => {
+            beaches --;
+            if(beaches < 0) {
+                beaches = top3Beaches.length - 1;
+            }
+        return beaches;
+        })  
+    }
+    
+    const next = () => {
+        setTopBeaches(beaches => {
+            beaches ++;
+            if(beaches > top3Beaches.length - 1) {
+                beaches = 0;
+            }
+        return beaches;
+    })  
+    }
 
     
     return (
         <div className="Beaches">
             <div className='header'>
-                <h2>Playas</h2>
+                <h2>{t("beaches")}</h2>
+            </div>            
+
+            <div className="top3beaches">                 
+                <button className='btn' onClick={previous}><img src={prevBtn} alt="prev button" width="50px" /></button>
+
+                <div key={id} className='beachesCard'>
+                    <h2 className="recommendedHeader">{t("recommended")}</h2>
+                    <h3>{name}</h3>
+                    <img src={image} alt="beach" width="280px" height="150px" />
+                    <p>{description[lang]}</p>
+                    <button className='linkToGoogle colorBeachesLink'><a className='googleLinkBeach' href={gps} target='_blank'>{t("directions")}</a></button>
+                </div>
+
+                <button className='btn' onClick={next}><img src={nextBtn} alt="next button" width="50px" /></button>  
             </div>
 
+            <div className='header'>
+                <h2>{t("all beaches")}</h2>
+            </div> 
+
+            <div className="beachesButtons">
+                <button className="beachButton" onClick={() => filteredBeaches("surface", "sand")}>{t("sand")}</button>
+                <button className="beachButton" onClick={() => filteredBeaches("surface", "rocky")}>{t("rocky")}</button>
+                <button className="beachButton" onClick={() => filteredBeaches("kidsFriendly", true)}>{t("kidsFriendly")}</button>
+                <button className="beachButton" onClick={() => filteredBeaches("snorkeling", true)}>{t("snorkeling")}</button>
+                <button className="beachButton" onClick={() => filteredBeaches("restaurant", true)}>{t("restaurant")}</button>
+                <button className="beachButton" onClick={() => filteredBeaches("howNear", "15-20 min")}>{t("15 min")}</button>
+                <button className="beachButton" onClick={() => filteredBeaches("howNear", "20-25 min")}>{t("20 min")}</button>
+                <button className="beachButton" onClick={() => filteredBeaches("howNear", "25-30 min")}>{t("25 min")}</button>
+                <button className="beachButton" onClick={() => setPlayas(beaches)}>{t("Show all")}</button>                
+            </div>
+
+            <div className="beaches-container">                   
+                {playas.map(beach => {
+                    const {id, name, image, description, gps} = beach;
+
+                    return (
+                        <div key={id} className='beachesCard'>
+                            <h3>{name}</h3>
+                            <img src={image} alt="beach" width="280px" height="150px" />
+                            <p>{description[lang]}</p>
+                            <button className='linkToGoogle colorBeachesLink'><a className='googleLinkBeach' href={gps} target='_blank'>{t("directions")}</a></button>
+                        </div> 
+                    )                         
+                })}                
+            </div>    
             
         </div>
     )

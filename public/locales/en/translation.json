@@ -21,5 +21,18 @@
     "containers 2km": "Containers a 2 km (5 min by car):",
     "containers 3km": "Containers a 3 km (7 min by car):",
     "containers 4km": "Containers a 4,2 km (9 min by car):",
-    "directions": "Get directions"
+    "directions": "Get directions",
+    "recommended": "Recommended",
+    "all beaches": "All beaches", 
+    "sand": "Sand",
+    "rocky": "Rocky",
+    "kidsFriendly": "KidsFriendly",
+    "snorkeling": "Snorkeling",
+    "restaurant": "Restaurant",
+    "15 min": "15-20 min by car",
+    "20 min": "20-25 min by car",
+    "25 min": "More than 25 min by car",
+    "show all": "Show all"
+
+
 }

@@ -140,7 +140,7 @@ export const beaches = [
         snorkeling: true,
         kidsFriendly: false,
         restaurant: false,
-        howNear: "30-35 min",
+        howNear: "25-30 min",
         gps: "https://maps.app.goo.gl/8N1qU7ijhAdGNeBf9"
     },    
 ]

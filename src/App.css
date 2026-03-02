@@ -71,7 +71,7 @@ h2 {
     text-align: center;   
 }
 
-.supermarkets {    
+.supermarkets, .top3beaches {    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,13 +99,7 @@ h3, h4 {
 }
 
 .linkToGoogle {    
-    padding: 10px 15px;
-    background: linear-gradient(
-        135deg,
-        rgb(18, 90, 110),
-        rgb(35, 140, 165),
-        rgb(18, 90, 110)
-    );
+    padding: 10px 15px;    
     background-size: 200% 200%;  
     border: none;
     border-radius: 5px;
@@ -113,7 +107,16 @@ h3, h4 {
     font-family: "Montserrat", sans-serif;   
     font-weight: 500;
     font-size: 15px;
-    transition: background-position 0.6s ease, transform 0.2s ease;
+    transition: background-position 0.6s ease, transform 0.2s ease;       
+}
+
+.colorMarketLink {
+    background: linear-gradient(
+        135deg,
+        rgb(18, 90, 110),
+        rgb(35, 140, 165),
+        rgb(18, 90, 110)
+    );
 }
 
 .linkToGoogle:hover {
@@ -147,12 +150,70 @@ h3, h4 {
 }
 
 .Beaches {
-    background-image: url(./assets/costa-maresme.webp);
+    background-image: url(./assets/costa-maresme1.jpg);    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;    
     min-height: 100vh;    
-    background-attachment: fixed;
+    background-attachment: fixed;    
 }
 
+.beachesCard { 
+    margin-top: 20px;
+    width: 300px;
+    height: 600px;    
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;   
+    background-color: rgba(239, 243, 245, 0.9);   
+    box-shadow: 
+        0 8px 15px rgba(0, 0, 0, 0.1),
+        0 20px 40px rgba(0, 0, 0, 0.12);    
+}
+
+.beaches-container {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;     
+}
+
+.colorBeachesLink {
+    background: linear-gradient(
+  135deg,
+  rgb(210, 180, 120),
+  rgb(238, 214, 160),
+  rgb(210, 180, 120)
+);
+}
+
+.googleLinkBeach {
+    color: #212020;
+    font-size: 15px;
+}
+
+.beachesButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.beachButton {
+    background-color: rgb(210, 180, 120);    
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;    
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 700;
+    font-size: 15px;
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+.recommendedHeader {    
+    margin: 0;
+    padding: 0;
+}
