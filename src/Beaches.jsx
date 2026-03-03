@@ -73,7 +73,7 @@ const Beaches = () => {
                 <button className="beachButton" onClick={() => filteredBeaches("howNear", "15-20 min")}>{t("15 min")}</button>
                 <button className="beachButton" onClick={() => filteredBeaches("howNear", "20-25 min")}>{t("20 min")}</button>
                 <button className="beachButton" onClick={() => filteredBeaches("howNear", "25-30 min")}>{t("25 min")}</button>
-                <button className="beachButton" onClick={() => setPlayas(beaches)}>{t("Show all")}</button>                
+                <button className="beachButton" onClick={() => setPlayas(beaches)}>{t("show all")}</button>                
             </div>
 
             <div className="beaches-container">                   

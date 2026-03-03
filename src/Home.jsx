@@ -9,7 +9,7 @@ const Home = () => {
     const {i18n, t} = useTranslation();
     const lang = i18n.language;
     const [markets, setMarkets] = useState(0);
-    const {id, name, image, description, sourse} = supermarkets[markets];    
+    const {id, name, image, description, source} = supermarkets[markets];    
 
     const previous = () => {
         setMarkets(markets => {
@@ -45,7 +45,7 @@ const Home = () => {
                     <h3>{name}</h3>
                     <img src={image} alt="supermarket" width="280px" height="150px" />
                     <p>{description[lang]}</p>
-                    <button className='linkToGoogle colorMarketLink'><a className='googleLink' href={sourse} target='_blank'>{t("google")}</a></button>
+                    <button className='linkToGoogle colorMarketLink'><a className='googleLink' href={source} target='_blank'>{t("google")}</a></button>
                 </div>
                 
                 <button className='btn' onClick={next}><img src={nextBtn} alt="next button" width="50px" /></button>     

@@ -12,7 +12,7 @@ export const supermarkets = [
             en: "This is a large supermarket where you can buy everything you need: groceries, household and cleaning products, baby care items, clothing, sports equipment, and cosmetics. In the same building, you can also find a bakery with freshly baked goods, ready-made meals, and sushi. It is located 8 km away and about a 15-minute drive.",
             fr: "Il s’agit d’un grand supermarché où vous pouvez acheter tout ce dont vous avez besoin : produits alimentaires, droguerie, articles pour le soin du bébé, textile, équipements sportifs et produits cosmétiques. Dans le même bâtiment, vous trouverez également une boulangerie avec des produits fraîchement cuits, des plats préparés et des sushis. Il se trouve à 8 km, soit environ 15 minutes en voiture.",
         },        
-        sourse: "https://share.google/yQ5DG3qLVGdiMQsa1"
+        source: "https://share.google/yQ5DG3qLVGdiMQsa1"
     },
     {
         id: "lidl",
@@ -23,7 +23,7 @@ export const supermarkets = [
             en: "Lidl is a practical and affordable supermarket where you can do your daily shopping conveniently. It offers fresh food, fruits and vegetables, freshly baked bread, and cleaning products, as well as weekly promotions and home goods. It is located 8.3 km away, about a 13-minute drive.",
             fr: "Lidl est un supermarché pratique et économique où vous pouvez faire vos courses quotidiennes en toute simplicité. Il propose des produits frais, fruits et légumes, du pain fraîchement cuit et des produits de nettoyage, ainsi que des promotions hebdomadaires et des articles pour la maison. Il se trouve à 8,3 km, soit environ 13 minutes en voiture.",
         },
-        sourse: "https://share.google/byH0NZcQOFEtddJj0"
+        source: "https://share.google/byH0NZcQOFEtddJj0"
     },
     {
         id: "mercadona",
@@ -34,6 +34,6 @@ export const supermarkets = [
             en: "Mercadona is a modern and well-organized supermarket where you can do your daily shopping comfortably. It offers fresh products, fruits and vegetables, a bakery, ready-made meals, and household items, as well as quality private-label brands. It is located 7 km away, about a 14-minute drive.",
             fr: "Mercadona est un supermarché moderne et bien organisé où vous pouvez faire vos courses quotidiennes en toute simplicité. Il propose des produits frais, fruits et légumes, une boulangerie, des plats préparés et des articles pour la maison, ainsi que des marques propres de qualité. Il se trouve à 7 km, soit environ 14 minutes en voiture.",
         },
-        sourse: "https://share.google/keWClDF5NcZQOeIXl"
+        source: "https://share.google/keWClDF5NcZQOeIXl"
     }    
 ]
