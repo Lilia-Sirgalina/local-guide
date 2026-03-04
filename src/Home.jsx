@@ -32,7 +32,7 @@ const Home = () => {
     }
     
     return (
-        <div className='Home'>
+        <div className='Home image'>
 
             <div className='header'>
                 <h2>{t("3supermarkets")}</h2>

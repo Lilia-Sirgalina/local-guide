@@ -32,5 +32,7 @@
     "15 min": "15-20 min en coche",
     "20 min": "20-25 min en coche",
     "25 min": "Más de 25 min en coche",
-    "show all": "Mostrar todo"
+    "show all": "Mostrar todo",
+    "local restaurants": "Restaurantes locales",    
+    "info restaurants": "Aquí encontrarás una selección de restaurantes locales que disponen de su propio aparcamiento, lo que facilita mucho la visita. Se recomienda reservar mesa con antelación, ya que en muchos casos el restaurante puede estar completo. Tened en cuenta que algunos restaurantes abren solo para la comida, mientras que otros también ofrecen servicio de cena, por lo que es aconsejable consultar los horarios antes de elegir."
 }

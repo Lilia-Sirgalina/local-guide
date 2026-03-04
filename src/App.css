@@ -53,7 +53,10 @@ nav {
 }
 
 .Home {
-    background-image: url(./assets/view.avif);
+    background-image: url(./assets/view.avif);    
+}
+
+.image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -151,12 +154,6 @@ h3, h4 {
 
 .Beaches {
     background-image: url(./assets/costa-maresme1.jpg);    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;    
-    min-height: 100vh;    
-    background-attachment: fixed;    
 }
 
 .beachesCard { 
@@ -216,4 +213,8 @@ h3, h4 {
 .recommendedHeader {    
     margin: 0;
     padding: 0;
+}
+
+.Restaurants {
+    background-image: url("./assets/plate1.jpg");    
 }

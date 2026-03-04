@@ -41,7 +41,7 @@ const Beaches = () => {
 
     
     return (
-        <div className="Beaches">
+        <div className="Beaches image">
             <div className='header'>
                 <h2>{t("beaches")}</h2>
             </div>            
