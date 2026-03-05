@@ -1,8 +1,10 @@
+import reverter from '../assets/restaurantsPictures/reverter.webp'
+
 export const restaurants = [
     {
         id: "reverter",
         name: "Reverter 2",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqGT1ZWKEBOTJvZHQPYgYl81GP96dFXtJV2rdHjwE3rvjVVd0L9Hx05J0X0QuB88THwVlaZBkDB8iLFy8pu-qTHACsVYgQs5x5T0mOq-5rex_GxjC5G3eGWtPGxhGBr7aVIqELNmQ=s680-w680-h510-rw",
+        image: reverter,
         description: {
             es: "El restaurante Reverter 2, en Palafolls, es un lugar popular para disfrutar de la cocina mediterránea y platos a la brasa en un ambiente informal y acogedor. Es conocido por sus raciones generosas, carnes a la barbacoa y menús variados, ideales para comidas en familia o con amigos. También dispone de terraza y servicio rápido. Se encuentra a unos 10 minutos en coche.",
             en: "The Reverter 2 restaurant in Palafolls is a popular place to enjoy Mediterranean cuisine and grilled dishes in a relaxed and welcoming atmosphere. It is known for its generous portions, barbecue meats, and varied menus, ideal for meals with family or friends. It also has a terrace and fast service. It is about a 10-minute drive away.",
@@ -261,7 +263,7 @@ export const restaurants = [
         chinese: true,
         mediterranean: false,
         localFood: false,        
-        howNear: "25-30 min",
+        howNear: "20-25 min",
         rating: "4,5/5",
         source: "https://share.google/9XdchJ2dHBvfrbUFM"
     },     

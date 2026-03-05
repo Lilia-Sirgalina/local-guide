@@ -29,12 +29,20 @@
     "kidsFriendly": "KidsFriendly",
     "snorkeling": "Snorkeling",
     "restaurant": "Restaurant",
+    "10 min": "10-15 min by car",
     "15 min": "15-20 min by car",
     "20 min": "20-25 min by car",
     "25 min": "More than 25 min by car",
+    "more than 20 min": "More than 20 min by car",
     "show all": "Show all",
     "local restaurants": "Local restaurants",    
-    "info restaurants": "Here you will find a selection of local restaurants that have their own parking, making your visit much easier. It is recommended to reserve a table in advance, as restaurants can often be fully booked. Please note that some restaurants open only for lunch, while others also offer dinner service, so it is advisable to check the opening hours in advance before choosing."
-
-
+    "info restaurants": "Here you will find a selection of local restaurants that have their own parking, making your visit much easier. It is recommended to reserve a table in advance, as restaurants can often be fully booked. Please note that some restaurants open only for lunch, while others also offer dinner service, so it is advisable to check the opening hours in advance before choosing.",
+    "kitchen": "Cuisine: ",
+    "price": "Price: ",
+    "rating": "Rating: ",
+    "mediterranean": "Mediterranean",
+    "local food": "Catalan",
+    "asian": "Asian / Sushi",
+    "only lunch": "Only lunch",
+    "lunch/dinner": "Lunch and dinner"
 }

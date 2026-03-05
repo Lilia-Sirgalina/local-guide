@@ -1,8 +1,18 @@
+import santaSusanna from '../assets/beachesPictures/santa-susanna.png'
+import blanes from '../assets/beachesPictures/blanes.jpg'
+import calaTrons from '../assets/beachesPictures/cala-trons.jpg'
+import lloret from '../assets/beachesPictures/lloret-de-mar.jpg'
+import malgrat from '../assets/beachesPictures/malgrat-de-mar.jpg'
+import pineda from '../assets/beachesPictures/pineda-de-mar.jpg'
+import saCaleta from '../assets/beachesPictures/sa-caleta.jpg'
+import santFrancesc from '../assets/beachesPictures/sant-francesc.jpg'
+import santaCristina from '../assets/beachesPictures/santa-cristina.webp'
+
 export const beaches = [
     {
         id: "Santa Susanna",
         name: "Playa de las Dunas",            
-        image: "https://santasusannaevents.com/wp-content/uploads/2023/04/Captura-de-pantalla-2023-04-02-a-las-20.24.34.png",
+        image: santaSusanna,
         description: {
             es: "Playa de las Dunas en Santa Susanna es una playa amplia y cómoda, ideal para pasar el día con tranquilidad. El acceso es fácil: hay que pasar por debajo del puente y entrar directamente a la playa. A lo largo de la costa discurre una larga carretera; conduciendo en dirección a Pineda de Mar se encuentra un gran aparcamiento. El paisaje se completa con un búnker de la Guerra Civil y la base náutica, donde se puede alquilar paddle surf, kayak, etc. Se encuentra a unos 16 minutos en coche.",
             en: "Playa de las Dunas in Santa Susanna is a wide and comfortable beach, ideal for spending a peaceful day. Access is easy: drive under the bridge and enter directly onto the beach. A long coastal road runs alongside it; heading toward Pineda de Mar you will find a large parking area. The landscape features a Spanish Civil War bunker and a nautical base where you can rent paddle boards, kayaks, and more. It is about a 16-minute drive away.",
@@ -18,7 +28,7 @@ export const beaches = [
     {
         id: "Santa Cristina",
         name: "Playa de Santa Cristina",
-        image: "https://lloretdemar.org/wp-content/uploads/2019/12/Santa-Cristina-e1744711352651.jpg",
+        image: santaCristina,
         description: {
             es: "La playa de Santa Cristina es una playa familiar de aguas cristalinas y poco profundas, con arena fina, frecuentada principalmente por bañistas locales y algunos turistas. Está dividida por una roca con una abertura que conecta la playa principal con Cala Treumal, más pequeña e íntima. Desde el aparcamiento hay que descender unos 300 metros. Es un lugar muy pintoresco donde se obtienen fotografías espectaculares. Los aficionados al snorkel pueden buscar una imagen de Santa Cristina oculta bajo el mar. Se encuentra a 22 minutos en coche.",
             en: "Santa Cristina Beach is a family-friendly beach with crystal-clear, shallow waters and fine sand, mainly visited by locals and some tourists. It is divided by a rock with an opening that connects the main beach with Cala Treumal, a smaller and more intimate cove. From the parking area, you must walk down about 300 meters. It is a very picturesque place where you can take spectacular photos. Snorkeling enthusiasts can look for an image of Saint Christina hidden beneath the sea. It is a 22-minute drive away.",
@@ -34,7 +44,7 @@ export const beaches = [
     {
         id: "Malgrat de mar",
         name: "Playa Malgrat",
-        image: "https://images.trvl-media.com/place/6034179/f9fb26bc-58c8-4675-8615-c43554096425.jpg",
+        image: malgrat,
         description: {
             es: "La Playa Malgrat es un rincón tranquilo donde encontrará una playa casi virgen, con poca gente y pocos servicios, ideal para quienes desean disfrutar del mar con calma. La visitan principalmente residentes locales, por lo que suele estar poco concurrida, a diferencia de otras playas más turísticas. Se encuentra a unos 17 minutos en coche y se recomienda acceder desde Malgrat de Mar.",
             en: "Playa Malgrat is a peaceful spot where you will find an almost unspoiled beach, with few visitors and limited services, ideal for those who want to enjoy the sea in tranquility. It is mainly visited by locals, so it is usually uncrowded, unlike more touristy beaches. It is about a 17-minute drive away, and access from Malgrat de Mar is recommended.",
@@ -50,7 +60,7 @@ export const beaches = [
     {
         id: "Pineda de Mar",
         name: "Playa de los Pinos",
-        image: "https://www.visitpineda.com/wp-content/uploads/fly-images/19116/787A0909-1240x600-c.jpg",
+        image: pineda,
         description: {
             es: "La playa de los Pinos de Pineda de Mar, situada al norte del municipio, es una playa amplia y de ambiente natural mediterráneo, rodeada de un espectacular pinar que invita a pasear y disfrutar en familia. Es ideal para pasar todo el día, con zona de picnic y espacios para el descanso. Aquí se encuentran el Club Náutico y la Base Náutica, donde grandes y pequeños pueden practicar windsurf, kayak de mar y otras actividades acuáticas. Se encuentra a unos 16 minutos en coche.",
             en: "Playa de los Pinos in Pineda de Mar, located north of the town, is a wide beach with a natural Mediterranean atmosphere, surrounded by an impressive pine grove that invites relaxing walks and family time. It is ideal for spending the whole day, with picnic areas and spaces to rest. The Nautical Club and Nautical Base are located here, where visitors of all ages can enjoy windsurfing, sea kayaking, and other water activities. It is about a 16-minute drive away.",
@@ -66,7 +76,7 @@ export const beaches = [
     {
         id: "Blanes",
         name: "Playa S'Abanell en Blanes",
-        image: "https://www.visitacostabrava.com/media/items/fullhd/platja-s-abanell-blanes--3-.jpg",
+        image: blanes,
         description: {
             es: "La Playa de S’Abanell es la más extensa y concurrida de Blanes, con unos 2,3 km de longitud desde Sa Palomera hasta la desembocadura del río Tordera. Situada en un entorno urbano animado, ofrece fácil acceso y numerosos servicios: bares y restaurantes, duchas, lavapiés y alquiler de hamacas. Es accesible para personas con movilidad reducida, con rampas, pasarelas y sillas anfibias. Se encuentra a unos 20 minutos en coche.",
             en: "S’Abanell Beach is the longest and most popular beach in Blanes, stretching about 2.3 km from Sa Palomera to the mouth of the Tordera River. Located in a lively urban area, it offers easy access and numerous services, including bars and restaurants, showers, foot washes, and sunbed rentals. It is accessible for people with reduced mobility, with ramps, walkways, and amphibious chairs. It is about a 20-minute drive away.",
@@ -82,7 +92,7 @@ export const beaches = [
     {
         id: "Lloret de Mar",
         name: "Playa de Fenals en Lloret de Mar",
-        image: "https://live.staticflickr.com/7543/26559635390_6a279c879f_b.jpg",
+        image: lloret,
         description: {
             es: "La playa de Fenals es la segunda más grande de Lloret de Mar, con unos 700 metros de longitud, situada en una bahía protegida del viento por un macizo que la separa del centro urbano. Su arena gruesa y sus aguas tranquilas y cristalinas la hacen ideal para disfrutar del mar con comodidad. Ofrece numerosos servicios y actividades: alquiler de sombrillas y hamacas, kayak, parasailing, zona deportiva, restaurantes y miniclub. Se encuentra a unos 22 minutos en coche.",
             en: "Fenals Beach is the second largest beach in Lloret de Mar, about 700 meters long, located in a bay sheltered from the wind by a massif that separates it from the town center. Its coarse sand and calm, crystal-clear waters make it ideal for enjoying the sea in comfort. It offers numerous services and activities, including umbrella and sunbed rentals, kayaking, parasailing, sports areas, restaurants, and a mini club. It is about a 22-minute drive away.",
@@ -98,7 +108,7 @@ export const beaches = [
     {
         id: "Sant Fransesc",
         name: "Cala Sant Francesc",
-        image: "https://media.timeout.com/images/106139472/image.jpg",
+        image: santFrancesc,
         description: {
             es: "La cala de Sant Francesc es una playa bonita y bien equipada situada frente a una tranquila zona residencial, a poco más de un kilómetro del centro de Blanes. Con unos 170 metros de longitud y arena de grano grueso, ofrece aguas claras y un entorno natural con abundantes árboles. Dispone de duchas, chiringuito, alquiler de tumbonas y una pequeña zona de aparcamiento. A la izquierda se extiende una zona rocosa ideal para buceo y pesca. Se encuentra a unos 25 minutos en coche.",
             en: "Cala Sant Francesc is a beautiful and well-equipped beach located opposite a quiet residential area, just over one kilometer from the center of Blanes. About 170 meters long and composed of coarse sand, it offers clear waters and a natural setting with abundant trees. It has showers, a beach bar, sunbed rentals, and a small parking area. To the left, a rocky area is ideal for diving and fishing. It is about a 25-minute drive away.",
@@ -114,7 +124,7 @@ export const beaches = [
     {
         id: "Sa Caleta",
         name: "Cala Sa Caleta y Cala dels Frarers",
-        image: "https://professionals.lloretdemar.org/wp-content/uploads/2016/01/IMG_6257_sa_caleta.jpg",
+        image: saCaleta,
         description: {
             es: "Sa Caleta, situada al final del paseo de Lloret de Mar junto al Castillo d’en Plaja, es una pintoresca cala de arena dorada y gruesa donde se concentran embarcaciones en verano. Sus aguas poco profundas y claras la hacen ideal para el baño y el buceo. Dispone de duchas, chiringuito y fácil acceso. A solo 200 metros se encuentra Cala dels Frares, más salvaje y rocosa, sin servicios y menos concurrida. Se encuentran a unos 28 minutos en coche.",
             en: "Sa Caleta, located at the end of the Lloret de Mar promenade next to the Castle of En Plaja, is a picturesque cove with golden, coarse sand where many boats gather in summer. Its shallow, clear waters make it ideal for swimming and diving. It offers showers, a beach bar, and easy access. Just 200 meters away is Cala dels Frares, wilder and rockier, with no services and fewer visitors. They are about a 28-minute drive away.",
@@ -130,7 +140,7 @@ export const beaches = [
     {
         id: "Cala Trons",
         name: "Cala Trons",
-        image: "https://beaches-searcher.com/images/beaches/724601284/ES601284.jpg",
+        image: calaTrons,
         description: {
             es: "La pequeña Cala d’En Trons se encuentra en un tramo abrupto del litoral entre las playas de Lloret y Canyelles. Con unos 45 metros de longitud, combina arena gruesa y grandes piedras, con un fondo marino rocoso y aguas cristalinas ideales para el snorkel. La entrada al mar es algo pronunciada. Al no disponer de servicios y por su terreno pedregoso, no es adecuada para niños pequeños ni personas mayores. Se encuentra a unos 31 minutos en coche.",
             en: "The small Cala d’En Trons is located along a rugged stretch of coastline between the beaches of Lloret and Canyelles. About 45 meters long, it combines coarse sand and large stones, with a rocky seabed and crystal-clear waters ideal for snorkeling. The entrance into the sea is somewhat steep. With no services and a rocky surface, it is not suitable for small children or elderly visitors. It is about a 31-minute drive away.",

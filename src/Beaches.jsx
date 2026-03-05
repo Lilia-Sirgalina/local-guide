@@ -65,15 +65,15 @@ const Beaches = () => {
             </div> 
 
             <div className="beachesButtons">
-                <button className="beachButton" onClick={() => filteredBeaches("surface", "sand")}>{t("sand")}</button>
-                <button className="beachButton" onClick={() => filteredBeaches("surface", "rocky")}>{t("rocky")}</button>
-                <button className="beachButton" onClick={() => filteredBeaches("kidsFriendly", true)}>{t("kidsFriendly")}</button>
-                <button className="beachButton" onClick={() => filteredBeaches("snorkeling", true)}>{t("snorkeling")}</button>
-                <button className="beachButton" onClick={() => filteredBeaches("restaurant", true)}>{t("restaurant")}</button>
-                <button className="beachButton" onClick={() => filteredBeaches("howNear", "15-20 min")}>{t("15 min")}</button>
-                <button className="beachButton" onClick={() => filteredBeaches("howNear", "20-25 min")}>{t("20 min")}</button>
-                <button className="beachButton" onClick={() => filteredBeaches("howNear", "25-30 min")}>{t("25 min")}</button>
-                <button className="beachButton" onClick={() => setPlayas(beaches)}>{t("show all")}</button>                
+                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("surface", "sand")}>{t("sand")}</button>
+                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("surface", "rocky")}>{t("rocky")}</button>
+                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("kidsFriendly", true)}>{t("kidsFriendly")}</button>
+                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("snorkeling", true)}>{t("snorkeling")}</button>
+                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("restaurant", true)}>{t("restaurant")}</button>
+                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("howNear", "15-20 min")}>{t("15 min")}</button>
+                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("howNear", "20-25 min")}>{t("20 min")}</button>
+                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("howNear", "25-30 min")}>{t("25 min")}</button>
+                <button className="filteredBtn beachBtn" onClick={() => setPlayas(beaches)}>{t("show all")}</button>                
             </div>
 
             <div className="beaches-container">                   

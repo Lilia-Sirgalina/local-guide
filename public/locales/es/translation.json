@@ -29,10 +29,20 @@
     "kidsFriendly": "Apto para niños",
     "snorkeling": "Buceo",
     "restaurant": "Restaurante",
+    "10 min": "10-15 min en coche",
     "15 min": "15-20 min en coche",
     "20 min": "20-25 min en coche",
     "25 min": "Más de 25 min en coche",
+    "more than 20 min": "Más de 20 min en coche",
     "show all": "Mostrar todo",
     "local restaurants": "Restaurantes locales",    
-    "info restaurants": "Aquí encontrarás una selección de restaurantes locales que disponen de su propio aparcamiento, lo que facilita mucho la visita. Se recomienda reservar mesa con antelación, ya que en muchos casos el restaurante puede estar completo. Tened en cuenta que algunos restaurantes abren solo para la comida, mientras que otros también ofrecen servicio de cena, por lo que es aconsejable consultar los horarios antes de elegir."
+    "info restaurants": "Aquí encontrarás una selección de restaurantes locales que disponen de su propio aparcamiento, lo que facilita mucho la visita. Se recomienda reservar mesa con antelación, ya que en muchos casos el restaurante puede estar completo. Tened en cuenta que algunos restaurantes abren solo para la comida, mientras que otros también ofrecen servicio de cena, por lo que es aconsejable consultar los horarios antes de elegir.",
+    "kitchen": "Cocina: ",
+    "price": "Precio: ",
+    "rating": "Valoración: ",
+    "mediterranean": "Mediterránea",
+    "local food": "Catalana",
+    "asian": "Asiática / Sushi",
+    "only lunch": "Solo comida",
+    "lunch/dinner": "Comida y cena"
 }

@@ -198,8 +198,7 @@ h3, h4 {
     justify-content: center;
 }
 
-.beachButton {
-    background-color: rgb(210, 180, 120);    
+.filteredBtn {        
     padding: 10px;
     border: 1px solid black;
     border-radius: 10px;    
@@ -210,6 +209,10 @@ h3, h4 {
     padding: 10px;
 }
 
+.beachBtn {
+    background-color: rgb(210, 180, 120);
+}
+
 .recommendedHeader {    
     margin: 0;
     padding: 0;
@@ -217,4 +220,37 @@ h3, h4 {
 
 .Restaurants {
     background-image: url("./assets/plate1.jpg");    
+}
+
+span {
+    color: #EA0558;
+    font-weight: 600;
+}
+
+.restaurantsCard {
+    margin-top: 20px;
+    width: 300px;
+    height: 650px;    
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;   
+    background-color: rgba(239, 243, 245, 0.9);   
+    box-shadow: 
+        0 8px 15px rgba(0, 0, 0, 0.1),
+        0 20px 40px rgba(0, 0, 0, 0.12); 
+}
+
+.colorRestaurantsLink {
+    background: linear-gradient(
+        135deg,
+        rgb(24, 119, 24),
+        rgb(44, 159, 44),
+        rgb(24, 119, 24)
+    );
+}
+
+.restaurantBtn {
+    background-color: rgb(52, 190, 52);   
 }

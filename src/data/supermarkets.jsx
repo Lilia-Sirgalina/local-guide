@@ -1,6 +1,6 @@
-import lidlImg from '../assets/lidl.webp'
-import carrefourImg from '../assets/carrefour.webp'
-import mercadonaImg from '../assets/mercadona.webp'
+import lidlImg from '../assets/supermarketPictures/lidl.webp'
+import carrefourImg from '../assets/supermarketPictures/carrefour.webp'
+import mercadonaImg from '../assets/supermarketPictures/mercadona.webp'
 
 export const supermarkets = [
     {
