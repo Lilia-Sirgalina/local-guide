@@ -7,7 +7,7 @@ import nextBtn from './icons8-forward-64.png'
 const Beaches = () => {
 
     const {i18n, t} = useTranslation();
-    const lang = i18n.language;
+    const lang = i18n.language.split("-")[0];
 
     const [playas, setPlayas] = useState(beaches);
     const top3Beaches = beaches.slice(0, 3);
@@ -61,7 +61,7 @@ const Beaches = () => {
                         <h2 className="recommendedHeader">{t("recommended")}</h2>
                         <h3>{name}</h3>
                         <img src={image} alt="beach" width="280px" height="150px" />
-                        <p>{description[lang]}</p>
+                        <p>{description?.[lang] || description?.en}</p>
                         <button className='linkToGoogle colorBeachesLink'><a className='googleLinkBeach' href={gps} target='_blank'>{t("directions")}</a></button>
                     </div>
 

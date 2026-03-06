@@ -7,7 +7,7 @@ import nextBtn from './icons8-forward-64.png'
 const Home = () => {
 
     const {i18n, t} = useTranslation();
-    const lang = i18n.language;
+    const lang = i18n.language.split("-")[0];
     const [markets, setMarkets] = useState(0);
     const {id, name, image, description, source} = supermarkets[markets];    
 
@@ -48,7 +48,7 @@ const Home = () => {
                     <div>
                         <h3>{name}</h3>
                         <img src={image} alt="supermarket" width="280px" height="150px" />
-                        <p>{description[lang]}</p>
+                        <p>{description?.[lang] || description?.en}</p>
                         <button className='linkToGoogle colorMarketLink'><a className='googleLink' href={source} target='_blank'>{t("google")}</a></button>
                     </div>
 

@@ -8,7 +8,7 @@ import nextBtn from './icons8-forward-64.png'
 const Restaurants = () => {
 
     const {i18n, t} = useTranslation();
-    const lang = i18n.language;
+    const lang = i18n.language.split("-")[0];
 
     const [comida, setComida] = useState(restaurants);
     const top3Restaurants = restaurants.slice(0, 3);
@@ -72,7 +72,7 @@ const Restaurants = () => {
                         <h2 className="recommendedHeader">{t("recommended")}</h2>
                         <h3>{name}</h3>
                         <img src={image} alt="restaurant" width="280px" height="150px" />
-                        <p>{description[lang]}</p>
+                        <p>{description?.[lang] || description?.en}</p>
                         <p><span>{t("rating")}</span>{rating}</p>
                         <p><span>{t("price")} </span>{price}</p>
                         <p><span>{t("kitchen")}</span>{cuisine(top3Restaurants[topRestaurants])}</p>
