@@ -13,13 +13,24 @@ import Shopping from './Shopping';
 function App() {
 
   const {i18n, t} = useTranslation();
-  const [open, setOpen] = useState(false);  
+  const [menuOpen, setMenuOpen] = useState(false);  
 
   return (
     <div className='App'> 
-      <div className='header'>
-        <h1>{t("local guide")}</h1>
-      </div>
+
+      <div className='headLine'>
+        <div className='heading'>
+          <h1>{t("local guide")}</h1>
+        </div>
+      
+        <div className='langContainer'>
+              <button className='langBtn' onClick={() => i18n.changeLanguage('en')}>EN /</button>
+              <button className='langBtn' onClick={() => i18n.changeLanguage('fr')}>FR /</button>
+              <button className='langBtn' onClick={() => i18n.changeLanguage('es')}>ES</button>                
+        </div>
+      </div> 
+
+      
 
       <Router>
         <nav>
@@ -29,14 +40,8 @@ function App() {
           <Link to="/Barcelona" className="link">{t("bcn")}</Link>
           <Link to="/active" className="link">{t("active-nature")}</Link>
           <Link to="/shopping" className="link">{t("shopping")}</Link>
-
-          <div className='langContainer'>
-              <button className='langBtn' onClick={() => i18n.changeLanguage('en')}>EN /</button>
-              <button className='langBtn' onClick={() => i18n.changeLanguage('fr')}>FR /</button>
-              <button className='langBtn' onClick={() => i18n.changeLanguage('es')}>ES</button>                
-          </div>
-
         </nav>
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/beaches" element={<Beaches />} />

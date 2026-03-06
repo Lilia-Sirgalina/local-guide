@@ -1,4 +1,18 @@
 import reverter from '../assets/restaurantsPictures/reverter.webp'
+import barbacoaCanDieta from '../assets/restaurantsPictures/barbacoa-can-dieta.webp'
+import calCoix from '../assets/restaurantsPictures/cal-coix.webp'
+import calNano from '../assets/restaurantsPictures/cal-nano.webp'
+import canCasellas from '../assets/restaurantsPictures/can-casellas.webp'
+import carboNegre from '../assets/restaurantsPictures/carbo-negre.webp'
+import casaOms from '../assets/restaurantsPictures/casa-oms.webp'
+import elReno from '../assets/restaurantsPictures/el-reno.webp'
+import koi from '../assets/restaurantsPictures/koi.webp'
+import laBella from '../assets/restaurantsPictures/la-bella.webp'
+import masCarbo from '../assets/restaurantsPictures/mas-carbo.webp'
+import masiaGibert from '../assets/restaurantsPictures/masia-gibert.webp'
+import missKorea from '../assets/restaurantsPictures/miss-korea.webp'
+import puraBrasa from '../assets/restaurantsPictures/pura-brasa.webp'
+
 
 export const restaurants = [
     {
@@ -23,7 +37,7 @@ export const restaurants = [
     {
         id: "pura brasa",
         name: "Pura Brasa Pineda de Mar",            
-        image: "https://lh3.googleusercontent.com/p/AF1QipMwzSILYK3Ba84eLv2QbxlER17GdUUqhn6Jibvj=s680-w680-h510-rw",
+        image: puraBrasa,
         description: {
             es: "El restaurante Pura Brasa en Pineda de Mar es un lugar moderno y acogedor especializado en carnes y platos a la parrilla. Ofrece una amplia variedad de carnes a la brasa, hamburguesas, tapas y platos mediterráneos, preparados con ingredientes de calidad. Es ideal para disfrutar de una comida con amigos o en familia en un ambiente agradable. Se encuentra a unos 13 minutos en coche.",
             en: "The Pura Brasa restaurant in Pineda de Mar is a modern and welcoming place specializing in grilled meats and barbecue dishes. It offers a wide variety of grilled meats, burgers, tapas, and Mediterranean dishes prepared with quality ingredients. It is ideal for enjoying a meal with friends or family in a pleasant atmosphere. It is about a 13-minute drive away.",
@@ -42,7 +56,7 @@ export const restaurants = [
     {
         id: "casa oms",
         name: "Casa Oms Restaurant",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweoNNfj7OoLJhuMBx_IfKwarikv-OQ2XrgrzMGkKDpxsc5psywNIa3GNFzkR6ZkBUJmR0MC18-oQXIpfWsNf6sYwkKfqcIdr1x36B60DJQcqPhD2mLJyLKtAZTTNMTlMmHjwL_g1gjf0qNw=s680-w680-h510-rw",
+        image: casaOms,
         description: {
             es: "El Casa Oms Restaurant es un restaurante acogedor donde se puede disfrutar de cocina mediterránea y catalana elaborada con productos frescos y de calidad. Ofrece una carta variada con carnes, pescados y platos tradicionales, en un ambiente tranquilo ideal para comidas en familia o con amigos. Destaca por su trato cercano y su agradable terraza. Se encuentra a unos 12 minutos en coche.",
             en: "Casa Oms Restaurant is a cozy place where you can enjoy Mediterranean and Catalan cuisine prepared with fresh, high-quality ingredients. It offers a varied menu with meats, fish, and traditional dishes in a calm atmosphere, ideal for meals with family or friends. It stands out for its friendly service and pleasant terrace. It is about a 12-minute drive away.",
@@ -61,7 +75,7 @@ export const restaurants = [
     {
         id: "masia gibert",
         name: "Masia Gibert",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweosfScKqNL8EwVv0iIQJqew1FrnpRAXx66Eyh-XF6lWgCMDbWoveQsvF7fwtMBmfDgQ9gv2dVZ48eP5VJRktvHJPkKIdzYUJRnOyuR0n3IevVO8o0eYSjYTWUsWbLAf1XCd_kk=s680-w680-h510-rw",
+        image: masiaGibert,
         description: {
             es: "El restaurante Masia Gibert, en Palafolls, es una acogedora masía catalana donde se puede disfrutar de cocina tradicional y platos a la brasa en un ambiente rústico y familiar. Ofrece carnes a la parrilla, especialidades locales y raciones generosas, ideales para comidas tranquilas con amigos o en familia. Destaca por su entorno agradable y su trato cercano. Se encuentra a unos 10 minutos en coche.",
             en: "Masia Gibert restaurant in Palafolls is a cozy Catalan farmhouse restaurant where you can enjoy traditional cuisine and grilled dishes in a rustic and family-friendly atmosphere. It offers grilled meats, local specialties, and generous portions, ideal for relaxed meals with friends or family. It stands out for its pleasant setting and friendly service. It is about a 10-minute drive away.",
@@ -80,7 +94,7 @@ export const restaurants = [
     {
         id: "miss korea",
         name: "Restaurante buffet Miss Korea Santa Susanna",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerJEhHTUIj68qwI8nfMXhl2y2q3q6tFHcDRYUKUMp_JCQLCccrlnnRKpQ2ARkWHguPbNmyeZf0hnhczlxqcrZvgxrjqcIH-cvsrE-WMimpjp-_a9ayF9V2uFGRxGYG6WkHabgjKnASMHzYu=s680-w680-h510-rw",
+        image: missKorea,
         description: {
             es: "El Restaurante Buffet Miss Korea en Santa Susanna es un restaurante tipo buffet donde puedes disfrutar de una gran variedad de platos asiáticos. Ofrece sushi, comida coreana, china y japonesa, además de platos preparados al momento. Es una opción ideal para probar diferentes sabores en un ambiente informal y familiar. Se encuentra a unos 13 minutos en coche.",
             en: "Miss Korea Buffet Restaurant in Santa Susanna is a buffet-style restaurant where you can enjoy a wide variety of Asian dishes. It offers sushi, Korean, Chinese, and Japanese food, as well as dishes prepared on the spot. It is an ideal place to try different flavors in a relaxed, family-friendly atmosphere. It is about a 13-minute drive away.",
@@ -99,7 +113,7 @@ export const restaurants = [
     {
         id: "el reno",
         name: "Restaurant El Reno",            
-        image: "https://lh3.googleusercontent.com/p/AF1QipOp8m6ZdG-lFzgdo91Zaj5cE59n5zTEDKLumNZ-=s680-w680-h510-rw",
+        image: elReno,
         description: {
             es: "El Restaurant El Reno en Lloret de Mar es un lugar popular donde disfrutar de cocina mediterránea y platos a la brasa en un ambiente acogedor. Su carta incluye carnes, pescados, tapas y menús variados, ideales para comidas con familia o amigos. Destaca por su servicio amable y su ambiente relajado. Se encuentra a unos 22 minutos en coche.",
             en: "Restaurant El Reno in Lloret de Mar is a popular place to enjoy Mediterranean cuisine and grilled dishes in a cozy atmosphere. Its menu includes meats, fish, tapas, and varied menus, ideal for meals with family or friends. It stands out for its friendly service and relaxed ambiance. It is about a 22-minute drive away.",
@@ -118,7 +132,7 @@ export const restaurants = [
     {
         id: "koi",
         name: "Koi Asian Restaurant",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepxHvbEU7ujizam14LSX0oTILl6h2vLk06PKGGxvAK_pJRtkdjKwAmKSZb4wlFuM5MCKNGHobjknf7v-GU772RzlKftx00cAZmU-P8LbSfJ0pmgyDnotJSni5K5Q5r9T9P_jpkBOw=s680-w680-h510-rw",
+        image: koi,
         description: {
             es: "El Koi Asian Restaurant es un restaurante moderno donde se puede disfrutar de una variada cocina asiática en un ambiente elegante y relajado. Su carta incluye sushi, platos japoneses y otras especialidades asiáticas preparadas con ingredientes frescos. Es un lugar ideal para una cena tranquila o para compartir diferentes sabores con amigos o familia. Se encuentra a unos 17 minutos en coche.",
             en: "Koi Asian Restaurant is a modern restaurant where you can enjoy a variety of Asian cuisine in an elegant and relaxed atmosphere. The menu includes sushi, Japanese dishes, and other Asian specialties prepared with fresh ingredients. It is an ideal place for a quiet dinner or to share different flavors with friends or family. It is about a 17-minute drive away.",
@@ -137,7 +151,7 @@ export const restaurants = [
     {
         id: "can casellas",
         name: "Can Casellas",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweoOQ8rEKLP9ENNMvQps8gYk_PZEBx0EXy6fgA98DLBdpHbnC2qmGygjuO0nNr5brIw_-yQAKHTvgO7KVl8ft4XqNO9yomHgmo9-VfGSKgVST7AZxNs8o3hzUnP7Ugbe0NvLq3dZ=s680-w680-h510-rw",
+        image: canCasellas,
         description: {
             es: "El Restaurant Can Casellas, en Tordera, es un restaurante tradicional donde se puede disfrutar de cocina catalana y mediterránea en un ambiente tranquilo y acogedor. Ofrece una carta variada con carnes a la brasa, platos caseros y productos de calidad. Es un lugar ideal para comidas en familia o con amigos. Se encuentra a unos 16 minutos en coche.",
             en: "Restaurant Can Casellas in Tordera is a traditional restaurant where you can enjoy Catalan and Mediterranean cuisine in a calm and welcoming atmosphere. It offers a varied menu with grilled meats, homemade dishes, and quality ingredients. It is an ideal place for meals with family or friends. It is about a 16-minute drive away.",
@@ -156,7 +170,7 @@ export const restaurants = [
     {
         id: "mas carbo",
         name: "Mas Carbó",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwerOu8fKiExjNed31UN1mN8ULk0ud_w5N3RjbDYJZxJbxgtyXvR3EzJE5NddaPoT3L4jAxpOeGUEg3Ewn5pKLskE3zufPq-WWKTfvNQM3kww9EH8AyYAu1UBdveYISgjlI6GiEAH=s680-w680-h510-rw",
+        image: masCarbo,
         description: {
             es: "El Restaurant Mas Carbó, en Palafolls, es una masía catalana con mucho encanto donde se puede disfrutar de cocina tradicional y platos a la brasa en un entorno tranquilo y natural. Su carta incluye carnes a la parrilla, especialidades locales y platos caseros preparados con ingredientes de calidad. Es ideal para comidas en familia o con amigos. Se encuentra a unos 12 minutos en coche.",
             en: "Restaurant Mas Carbó in Palafolls is a charming Catalan farmhouse restaurant where you can enjoy traditional cuisine and grilled dishes in a peaceful, natural setting. The menu includes grilled meats, local specialties, and homemade dishes prepared with quality ingredients. It is an ideal place for meals with family or friends. It is about a 12-minute drive away.",
@@ -175,7 +189,7 @@ export const restaurants = [
     {
         id: "cal coix",
         name: "Restaurant CAL COIX",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqRF3EFtT59EkZTWImQxlJgGmF1JCFsAzI-Q9I277aJFdJs8yuN2ORR0l8yWSnwuXQIo2g5XNtxoyGqPkpufn2uVPFBE5X1RWDm_0sKhDlV_Ycg7BpyAkbg-TTCielYhoZgbLJo=s680-w680-h510-rw",
+        image: calCoix,
         description: {
             es: "El Restaurant Cal Coix es un restaurante acogedor donde se puede disfrutar de cocina catalana y mediterránea en un ambiente familiar y relajado. Ofrece platos tradicionales, carnes a la brasa y especialidades caseras preparadas con productos de calidad. Es un lugar ideal para comidas tranquilas con familia o amigos. Se encuentra a unos 20 minutos en coche.",
             en: "Restaurant Cal Coix is a cozy place where you can enjoy Catalan and Mediterranean cuisine in a relaxed, family-friendly atmosphere. It offers traditional dishes, grilled meats, and homemade specialties prepared with quality ingredients. It is an ideal place for a calm meal with family or friends. It is about a 20-minute drive away.",
@@ -194,7 +208,7 @@ export const restaurants = [
     {
         id: "carbo negre",
         name: "Carbó Negre",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepS2IeX0KD1RXdQVlXzvkupUz0m8SJke2petwnP9HaGEeoq74wAu7jr_JhCcBWnTMvHN8vDOtFfXdXDHFI37TavQXjN9Vzgy9G_MkxtHYZOHxUyPdfaUcZEZKttAwbGZImlxRsJaaMMP_tQ=s680-w680-h510-rw",
+        image: carboNegre,
         description: {
             es: "El Restaurant Carbó Negre es un restaurante moderno especializado en carnes a la brasa y cocina mediterránea. Ofrece una carta variada con carnes de calidad, tapas y platos elaborados con productos frescos. Su ambiente es acogedor y agradable, ideal para comidas con amigos o en familia. Es una buena opción para disfrutar de la gastronomía local. Se encuentra a unos 20 minutos en coche.",
             en: "Restaurant Carbó Negre is a modern restaurant specializing in grilled meats and Mediterranean cuisine. It offers a varied menu with quality meats, tapas, and dishes prepared with fresh ingredients. The atmosphere is welcoming and pleasant, making it an ideal place for meals with friends or family. It is a great option to enjoy local gastronomy. It is about a 20-minute drive away.",
@@ -213,7 +227,7 @@ export const restaurants = [
     {
         id: "cal nano",
         name: "Restaurante Masía Cal Nano",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAweqbtyARQmuQsy0RmES1ha5516Tja8RIphDohRbr9zwcU14ymq3ojrIJmbqNpxX3jSxwfnL-UVInG7bJ-MvIhGf39iiylUGGVcBD314t4yAbHaSUbTdRxBahQgSAZx9NDSa8zERo=s680-w680-h510-rw",
+        image: calNano,
         description: {
             es: "El Restaurante Masía Cal Nano es una acogedora masía catalana donde se puede disfrutar de cocina tradicional en un ambiente rústico y familiar. Su carta incluye carnes a la brasa, platos caseros y especialidades de la gastronomía catalana preparadas con productos de calidad. Es un lugar ideal para comidas tranquilas con amigos o en familia. Se encuentra a unos 17 minutos en coche.",
             en: "Restaurante Masía Cal Nano is a cozy Catalan farmhouse restaurant where you can enjoy traditional cuisine in a rustic, family-friendly atmosphere. The menu includes grilled meats, homemade dishes, and Catalan specialties prepared with quality ingredients. It is an ideal place for relaxed meals with friends or family. It is about a 17-minute drive away.",
@@ -232,7 +246,7 @@ export const restaurants = [
     {
         id: "barbacoa can dieta",
         name: "Restaurant Barbacoa Can Dieta Tordera",            
-        image: "https://lh3.googleusercontent.com/p/AF1QipMXakgkRlIqJ9AR5XcF5zS9rDrf1Vw79WxoTzR_=s680-w680-h510-rw",
+        image: barbacoaCanDieta,
         description: {
             es: "El Restaurant Barbacoa Can Dieta, en Tordera, es un restaurante popular especializado en carnes a la brasa y cocina tradicional en un ambiente sencillo y acogedor. Su carta incluye parrilladas, platos caseros y raciones generosas, ideales para disfrutar de una comida con familia o amigos. Destaca por su sabor auténtico y su ambiente informal. Se encuentra a unos 17 minutos en coche.",
             en: "Restaurant Barbacoa Can Dieta in Tordera is a popular restaurant specializing in grilled meats and traditional cuisine in a simple and welcoming atmosphere. Its menu includes barbecue platters, homemade dishes, and generous portions, ideal for enjoying a meal with family or friends. It stands out for its authentic flavors and relaxed ambiance. It is about a 17-minute drive away.",
@@ -251,7 +265,7 @@ export const restaurants = [
     {
         id: "la bella",
         name: "La Bella Restaurant Asían Fusión",            
-        image: "https://lh3.googleusercontent.com/gps-cs-s/AHVAwepreo9qaRzyNAbK3VUvjdawRFGVV3Z0cgbdBmd6YzQ6wD1YH6vRGbKDLdTUxlFs1Ezw1X3WPltnVeSehE60CAPjdSuFfj7sCVJ0N-0IDNJZB66uQms8Mtjsve49MV1WYEB6Kpu8RI8voIo=s680-w680-h510-rw",
+        image: laBella,
         description: {
             es: "El La Bella Restaurant Asian Fusión es un restaurante moderno donde se puede disfrutar de una variada cocina asiática en un ambiente elegante y acogedor. Su carta combina sushi, platos japoneses y otras especialidades asiáticas preparadas con ingredientes frescos. Es una buena opción para una cena tranquila o para compartir diferentes sabores con amigos o familia. Se encuentra a unos 27 minutos en coche.",
             en: "La Bella Restaurant Asian Fusion is a modern restaurant where you can enjoy a variety of Asian cuisine in an elegant and welcoming atmosphere. The menu combines sushi, Japanese dishes, and other Asian specialties prepared with fresh ingredients. It is a great option for a relaxed dinner or for sharing different flavors with friends or family. It is about a 27-minute drive away.",
