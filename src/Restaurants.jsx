@@ -16,8 +16,8 @@ const Restaurants = () => {
     const {id, name, image, description, price, rating, source, mediterranean, chinese, localFood} = top3Restaurants[topRestaurants];
 
      const filteredRestaurants = (key, value) => {
-            const filtered = restaurants.filter((restaurant) => restaurant[key] === value);
-            setComida(filtered);
+        const filtered = restaurants.filter((restaurant) => restaurant[key] === value);
+        setComida(filtered);
     };
 
     const cuisine = (restaurant) => {
@@ -61,20 +61,29 @@ const Restaurants = () => {
             </div>
 
             <div className="top3beaches">                 
-                <button className='btn' onClick={previous}><img src={prevBtn} alt="prev button" width="50px" /></button>
+                
 
-                <div key={id} className='restaurantsCard'>
-                    <h2 className="recommendedHeader">{t("recommended")}</h2>
-                    <h3>{name}</h3>
-                    <img src={image} alt="restaurant" width="280px" height="150px" />
-                    <p>{description[lang]}</p>
-                    <p><span>{t("rating")}</span>{rating}</p>
-                    <p><span>{t("price")} </span>{price}</p>
-                    <p><span>{t("kitchen")}</span>{cuisine(top3Restaurants[topRestaurants])}</p>
-                    <button className='linkToGoogle colorRestaurantsLink'><a className='googleLink' href={source} target='_blank'>{t("google")}</a></button>
-                </div>
+                <div key={id} className='restaurantsCard topRestaurantsCarrousel'>
+                    <div>
+                        <button className='btn' onClick={previous}><img src={prevBtn} alt="prev button" width="40px" /></button>
+                    </div>
 
-                <button className='btn' onClick={next}><img src={nextBtn} alt="next button" width="50px" /></button>  
+                    <div>
+                        <h2 className="recommendedHeader">{t("recommended")}</h2>
+                        <h3>{name}</h3>
+                        <img src={image} alt="restaurant" width="280px" height="150px" />
+                        <p>{description[lang]}</p>
+                        <p><span>{t("rating")}</span>{rating}</p>
+                        <p><span>{t("price")} </span>{price}</p>
+                        <p><span>{t("kitchen")}</span>{cuisine(top3Restaurants[topRestaurants])}</p>
+                        <button className='linkToGoogle colorRestaurantsLink'><a className='googleLink' href={source} target='_blank'>{t("google")}</a></button>
+                    </div>
+
+                    <div>
+                        <button className='btn' onClick={next}><img src={nextBtn} alt="next button" width="40px" /></button>
+                    </div>
+                    
+                </div>                  
             </div>
 
             <div className="beachesButtons">

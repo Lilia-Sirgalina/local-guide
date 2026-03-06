@@ -1,16 +1,64 @@
-# React + Vite
+# Local Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo  
+🔗 View the app on Netlify (https://local-guide-project.netlify.app)
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Local Guide** is a React application created to help tourists visiting our town.  
+The app provides a curated list of useful local places and attractions, making it easier for visitors to navigate the area and discover important locations.
 
-## React Compiler
+Tourists can find information about:
+- Supermarkets
+- Waste container locations
+- Beaches
+- Restaurants
+- Top attractions in Barcelona and Girona
+- Local attractions and places of interest
+- Large shopping malls
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project is built using **React** and includes several modern web development features.
 
-## Expanding the ESLint configuration
+Project implementation includes:
+- Data stored in separate files as arrays
+- **React Router** for navigation and page routing
+- Rendering attraction cards using the `.map()` method
+- Filtering cards by categories using the `.filter()` method
+- A **Top-3 must-visit places slider**
+- **Multilingual support** using `react-i18next` and the `useTranslation` hook
+- **Responsive design** optimized for mobile devices
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+No installation is required.
+
+## Here's what the app looks like:
+
+![App Screenshot](project-screenshot.JPG)
+
+## How to Use:
+- Navigate between sections using the menu.
+- Explore different categories of places in the town.
+- Click category buttons to filter locations.
+- Use the slider to see the **Top-3 recommended places to visit**.
+- Switch the interface language if needed.
+
+## Features:
+- Tourist-friendly guide for local places and attractions
+- Category filtering for locations
+- Dynamic card rendering using `.map()`
+- Client-side routing with React Router
+- Internationalization with `react-i18next`
+- Top attractions slider
+- Mobile responsive design
+- Organized data structure using arrays
+
+## Requirements:
+- A modern web browser
+- JavaScript enabled
+
+## Technologies Used
+- React
+- Vite
+- React Router
+- i18next (react-i18next)
+- JavaScript (ES6+)
+- CSS

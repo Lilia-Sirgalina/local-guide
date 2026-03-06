@@ -38,17 +38,25 @@ const Home = () => {
                 <h2>{t("3supermarkets")}</h2>
             </div>
 
-            <div className='supermarkets'>
-                <button className='btn' onClick={previous}><img src={prevBtn} alt="prev button" width="50px" /></button>         
+            <div className='supermarkets'>                        
                 
                 <div className='storeCard'>
-                    <h3>{name}</h3>
-                    <img src={image} alt="supermarket" width="280px" height="150px" />
-                    <p>{description[lang]}</p>
-                    <button className='linkToGoogle colorMarketLink'><a className='googleLink' href={source} target='_blank'>{t("google")}</a></button>
-                </div>
-                
-                <button className='btn' onClick={next}><img src={nextBtn} alt="next button" width="50px" /></button>     
+                    <div>
+                        <button className='btn' onClick={previous}><img src={prevBtn} alt="prev button" width="40px" /></button> 
+                    </div>
+
+                    <div>
+                        <h3>{name}</h3>
+                        <img src={image} alt="supermarket" width="280px" height="150px" />
+                        <p>{description[lang]}</p>
+                        <button className='linkToGoogle colorMarketLink'><a className='googleLink' href={source} target='_blank'>{t("google")}</a></button>
+                    </div>
+
+                    <div>
+                        <button className='btn' onClick={next}><img src={nextBtn} alt="next button" width="40px" /></button> 
+                    </div>
+                </div>                
+                    
             </div>            
 
             <div className='trashInfo'>

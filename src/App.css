@@ -11,10 +11,14 @@ body {
 h1 {
     font-family: "Montserrat", sans-serif;
     color: #212020;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
-nav {
+.mobileMenuBtn {
+    display: none;
+}
+
+.navLinks {
     background-color: #EA0558;
     display: flex;
     justify-content: space-around;
@@ -47,18 +51,10 @@ nav {
     cursor: pointer;
 }
 
-.langContainer {
-    position: relative;
+.langContainer {    
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-}
-
-.dropdownLang {
-    position: absolute;
-    top: 100%;
-    background-color: #EA0558;
-    padding: 5px;
 }
 
 .Home {
@@ -92,6 +88,9 @@ h2 {
 }
 
 .storeCard { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     width: 300px;
     height: 500px;    
@@ -109,6 +108,7 @@ h2 {
 h3, h4 {
     color: #EA0558;
 }
+
 
 .linkToGoogle {    
     padding: 10px 15px;    
@@ -157,7 +157,7 @@ h3, h4 {
 .btn {
     background: transparent;
     border: none;
-    padding: 0;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -165,7 +165,7 @@ h3, h4 {
     background-image: url(./assets/costa-maresme1.jpg);    
 }
 
-.beachesCard { 
+.beachesCard {     
     margin-top: 20px;
     width: 300px;
     height: 600px;    
@@ -178,6 +178,12 @@ h3, h4 {
     box-shadow: 
         0 8px 15px rgba(0, 0, 0, 0.1),
         0 20px 40px rgba(0, 0, 0, 0.12);    
+}
+
+.topBeachesCarousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .beaches-container {    
@@ -205,6 +211,7 @@ h3, h4 {
 .beachesButtons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .filteredBtn {        
@@ -251,6 +258,12 @@ span {
         0 20px 40px rgba(0, 0, 0, 0.12); 
 }
 
+.topRestaurantsCarrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .colorRestaurantsLink {
     background: linear-gradient(
         135deg,
@@ -262,4 +275,60 @@ span {
 
 .restaurantBtn {
     background-color: rgb(52, 190, 52);   
+}
+
+
+@media (max-width: 768px) {
+    .mobileMenuBtn {
+        display: block;
+        z-index: 20;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .navLinks.active {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        position: absolute;    
+        width: 100%;        
+        border-radius: 12px;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+        z-index: 10;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .langBtn {       
+        font-size: 15px;    
+    }
+
+    h2 {
+        font-size: 22px;
+    }   
+
+    .filteredBtn {     
+        font-size: 12px;
+        margin: 5px 10px;    
+    }
+
+    .beachesCard {     
+        margin-top: 5px;    
+        padding: 25px;
+        margin-bottom: 10px;
+    }
+
+    .beaches-container {       
+        gap: 0;     
+    }
+
+    .trashInfo {           
+        padding: 10px 40px;    
+        width: 70%;   
+        margin-bottom: 10px;
+    }
 }

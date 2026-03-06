@@ -44,20 +44,32 @@ const Beaches = () => {
         <div className="Beaches image">
             <div className='header'>
                 <h2>{t("beaches")}</h2>
-            </div>            
+            </div>   
 
-            <div className="top3beaches">                 
-                <button className='btn' onClick={previous}><img src={prevBtn} alt="prev button" width="50px" /></button>
+             <div className='trashInfo'>            
+                <p>{t("info beaches")}</p> 
+            </div>         
 
-                <div key={id} className='beachesCard'>
-                    <h2 className="recommendedHeader">{t("recommended")}</h2>
-                    <h3>{name}</h3>
-                    <img src={image} alt="beach" width="280px" height="150px" />
-                    <p>{description[lang]}</p>
-                    <button className='linkToGoogle colorBeachesLink'><a className='googleLinkBeach' href={gps} target='_blank'>{t("directions")}</a></button>
+            <div className="top3beaches">                  
+
+                <div key={id} className='beachesCard topBeachesCarousel'>
+                    <div>
+                        <button className='btn' onClick={previous}><img src={prevBtn} alt="prev button" width="40px" /></button>
+                    </div>
+
+                    <div>
+                        <h2 className="recommendedHeader">{t("recommended")}</h2>
+                        <h3>{name}</h3>
+                        <img src={image} alt="beach" width="280px" height="150px" />
+                        <p>{description[lang]}</p>
+                        <button className='linkToGoogle colorBeachesLink'><a className='googleLinkBeach' href={gps} target='_blank'>{t("directions")}</a></button>
+                    </div>
+
+                    <div>
+                        <button className='btn' onClick={next}><img src={nextBtn} alt="next button" width="40px" /></button>
+                    </div>
                 </div>
 
-                <button className='btn' onClick={next}><img src={nextBtn} alt="next button" width="50px" /></button>  
             </div>
 
             <div className='header'>
