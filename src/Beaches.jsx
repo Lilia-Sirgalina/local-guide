@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { beaches } from "./data/beaches";
 import { useTranslation } from "react-i18next";
+import { beachFilters } from "./data/filters";
 import prevBtn from './icons8-back-64.png'
 import nextBtn from './icons8-forward-64.png'
 
@@ -36,7 +37,7 @@ const Beaches = () => {
                 beaches = 0;
             }
         return beaches;
-    })  
+        })  
     }
 
     
@@ -46,7 +47,7 @@ const Beaches = () => {
                 <h2>{t("beaches")}</h2>
             </div>   
 
-             <div className='trashInfo'>            
+            <div className='trashInfo'>            
                 <p>{t("info beaches")}</p> 
             </div>         
 
@@ -77,14 +78,11 @@ const Beaches = () => {
             </div> 
 
             <div className="beachesButtons">
-                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("surface", "sand")}>{t("sand")}</button>
-                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("surface", "rocky")}>{t("rocky")}</button>
-                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("kidsFriendly", true)}>{t("kidsFriendly")}</button>
-                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("snorkeling", true)}>{t("snorkeling")}</button>
-                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("restaurant", true)}>{t("restaurant")}</button>
-                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("howNear", "15-20 min")}>{t("15 min")}</button>
-                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("howNear", "20-25 min")}>{t("20 min")}</button>
-                <button className="filteredBtn beachBtn" onClick={() => filteredBeaches("howNear", "25-30 min")}>{t("25 min")}</button>
+
+                {beachFilters.map(filter => (
+                    <button key={filter.label} className="filteredBtn beachBtn" onClick={() => filteredBeaches(filter.type, filter.value)}>{t(filter.label)}</button>
+                ))}
+
                 <button className="filteredBtn beachBtn" onClick={() => setPlayas(beaches)}>{t("show all")}</button>                
             </div>
 

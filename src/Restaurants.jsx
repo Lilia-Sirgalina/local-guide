@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { restaurants } from "./data/restaurants";
 import { useState } from "react";
+import { restaurantFilters } from "./data/filters";
 import prevBtn from './icons8-back-64.png'
 import nextBtn from './icons8-forward-64.png'
 
@@ -15,20 +16,20 @@ const Restaurants = () => {
     const [topRestaurants, setTopRestaurants] = useState(0);
     const {id, name, image, description, price, rating, source, mediterranean, chinese, localFood} = top3Restaurants[topRestaurants];
 
-     const filteredRestaurants = (key, value) => {
+    const filteredRestaurants = (key, value) => {
         const filtered = restaurants.filter((restaurant) => restaurant[key] === value);
         setComida(filtered);
     };
 
     const cuisine = (restaurant) => {
-  if (restaurant.mediterranean && restaurant.localFood) {
-    return `${t("mediterranean")} / ${t("local food")}`;
-  }
-  if (restaurant.mediterranean) return t("mediterranean");
-  if (restaurant.localFood) return t("local food");
-  if (restaurant.chinese) return t("asian");
-  return "";
-};
+        if (restaurant.mediterranean && restaurant.localFood) {
+            return `${t("mediterranean")} / ${t("local food")}`;
+        }
+        if (restaurant.mediterranean) return t("mediterranean");
+        if (restaurant.localFood) return t("local food");
+        if (restaurant.chinese) return t("asian");
+        return "";
+    };
 
     const previous = () => {
         setTopRestaurants(restaurants => {
@@ -86,15 +87,12 @@ const Restaurants = () => {
                 </div>                  
             </div>
 
-            <div className="beachesButtons">
-                <button className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants("onlyLunch", true)}>{t("only lunch")}</button>
-                <button className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants("lunchAndDinner", true)}>{t("lunch/dinner")}</button>
-                <button className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants("mediterranean", true)}>{t("mediterranean")}</button>
-                <button className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants("localFood", true)}>{t("local food")}</button>
-                <button className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants("chinese", true)}>{t("asian")}</button>
-                <button className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants("howNear", "10-15 min")}>{t("10 min")}</button>
-                <button className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants("howNear", "15-20 min")}>{t("15 min")}</button>
-                <button className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants("howNear", "20-25 min")}>{t("more than 20 min")}</button>
+            <div className="beachesButtons">               
+
+                {restaurantFilters.map(filter => (
+                    <button key={filter.label} className="filteredBtn restaurantBtn" onClick={() => filteredRestaurants(filter.type, filter.value)}>{t(filter.label)}</button>
+                ))}
+
                 <button className="filteredBtn restaurantBtn" onClick={() => setComida(restaurants)}>{t("show all")}</button>                
             </div>
 

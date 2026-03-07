@@ -19,7 +19,7 @@ const Home = () => {
             }
         return markets;
         })  
-        }
+    }
     
     const next = () => {
         setMarkets(markets => {
@@ -28,7 +28,7 @@ const Home = () => {
                 markets = 0;
             }
         return markets;
-    })  
+        })  
     }
     
     return (
@@ -64,14 +64,14 @@ const Home = () => {
                 <h2>{t("trash header")}</h2>
             
                 <p>{t("trash description")}</p>
-                <h4>{t("container colors")}</h4>
+                <h3>{t("container colors")}</h3>
                 <p>🟡 {t("yellow")} <br /> 
                 🔵 {t("blue")} <br />
                 🟢 {t("green")} <br />
                 🟤 {t("brown")} <br /> 
                 ⚫ {t("grey")}</p>
                 <p> {t("container description")}</p>
-                <h4>{t("containers")}</h4>
+                <h3>{t("containers")}</h3>
                 <p>{t("containers 2km")} <a href="https://maps.app.goo.gl/z9TscXmkLXanDMX97" target='_blank'>{t("directions")}</a> </p>
                 <p>{t("containers 3km")} <a href="https://maps.app.goo.gl/PJjiCWZw13S5dZm5A" target='_blank'>{t("directions")}</a> </p>
                 <p>{t("containers 4km")} <a href="https://maps.app.goo.gl/fopKh6YfVtHeLhcu7" target='_blank'>{t("directions")}</a> </p>

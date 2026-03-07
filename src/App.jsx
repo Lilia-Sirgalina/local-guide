@@ -8,44 +8,23 @@ import Restaurants from './Restaurants';
 import Barcelona from './Barcelona';
 import ActiveAndNature from './ActiveAndNature';
 import Shopping from './Shopping';
-import menuButton from './burger-menu.png'
-import closeButton from './close-menu.png'
+import Menu from './Menu';
+
 
 
 function App() {
 
   const {i18n, t} = useTranslation();
-  const [menuOpen, setMenuOpen] = useState(false);  
 
+  const [menuOpen, setMenuOpen] = useState(false);  
   const openMenu = () => setMenuOpen(true);
   const closeMenu = () => setMenuOpen(false);
+  
 
   return (
     <div className='App'> 
 
-      <div className='headLine'>
-        <div className="mobileMenuBtn">
-        {!menuOpen ? (
-          <button onClick={openMenu} className="menuBtn">
-            <img src={menuButton} alt="burger button" width="" />
-          </button>
-        ) : (
-          <button onClick={closeMenu} className="menuBtn">
-            <img src={closeButton} alt="close button" />
-          </button>
-        )}
-      </div>
-
-        <div className='heading'>
-          <h1>{t("local guide")}</h1>
-        </div>
-      
-        <div className='langContainer'>
-              <button className='langBtn' onClick={() => i18n.changeLanguage('en')}>EN /</button>
-              <button className='langBtn' onClick={() => i18n.changeLanguage('fr')}>FR /</button>
-              <button className='langBtn' onClick={() => i18n.changeLanguage('es')}>ES</button>                
-        </div>
-      </div>       
+      <Menu menuOpen={menuOpen} openMenu={openMenu} closeMenu={closeMenu}/>
 
       <Router>
         <nav className={menuOpen ? "navLinks active" : "navLinks"}>
