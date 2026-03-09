@@ -279,9 +279,12 @@ span {
 
 
 @media (max-width: 768px) {
+
+    
     .mobileMenuBtn {
-        display: block;
-        z-index: 20;
+        display: flex;
+        align-items: center;
+        z-index: 20;        
     }
 
     .navLinks {
@@ -300,7 +303,7 @@ span {
     }
 
     h1 {
-        font-size: 31px;
+        font-size: 34px;
     }
 
     .langBtn {       

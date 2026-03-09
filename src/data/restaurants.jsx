@@ -22,7 +22,7 @@ export const restaurants = [
         description: {
             es: "El restaurante Reverter 2, en Palafolls, es un lugar popular para disfrutar de la cocina mediterránea y platos a la brasa en un ambiente informal y acogedor. Es conocido por sus raciones generosas, carnes a la barbacoa y menús variados, ideales para comidas en familia o con amigos. También dispone de terraza y servicio rápido. Se encuentra a unos 10 minutos en coche.",
             en: "The Reverter 2 restaurant in Palafolls is a popular place to enjoy Mediterranean cuisine and grilled dishes in a relaxed and welcoming atmosphere. It is known for its generous portions, barbecue meats, and varied menus, ideal for meals with family or friends. It also has a terrace and fast service. It is about a 10-minute drive away.",
-            fr: "Le restaurant Reverter 2 à Palafolls est un lieu populaire pour déguster une cuisine méditerranéenne et des plats grillés dans une ambiance conviviale et détendue. Il est connu pour ses portions généreuses, ses viandes au barbecue et ses menus variés, idéals pour les repas en famille ou entre amis. Il dispose également d’une terrasse et d’un service rapide. Il se trouve à environ 10 minutes en voiture."
+            fr: "Le restaurant Reverter 2 à Palafolls est un lieu populaire pour déguster une cuisine méditerranéenne et des plats grillés dans une ambiance conviviale et détendue. Il est connu pour ses portions généreuses, ses viandes au barbecue et ses menus variés, idéals pour les repas en famille ou entre amis. Terrasse et service rapide. Il se trouve à environ 10 minutes en voiture."
         },
         price: "20-30 €",        
         onlyLunch: true,
